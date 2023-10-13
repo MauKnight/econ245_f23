@@ -48,7 +48,9 @@ highest_avg_square_ft <- summary_stats_top_neighborhoods %>%
   pull(avg_square_feet)
 
 # P2 2.e
+
 second_avg_price <- summary_stats_top_neighborhoods %>% 
+  arrange(desc(avg_price)) %>% 
   slice(2) %>% 
   pull(avg_price)
 
